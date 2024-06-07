@@ -1,0 +1,4 @@
+
+In selection sort we assume that first index hold min value 
+then in j loop we check that lowest is lowest or not if not then we make that j index as lowest 
+after that we check is i still the lowest if no then swap the value 

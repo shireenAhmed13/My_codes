@@ -1,0 +1,82 @@
+After each iteration, the greatest value of the array becomes the last index value of the array.
+     In each iteration, the comparison happens till the last unsorted element.
+
+function bubbleSort(arr)
+{
+
+    for(let i=0;i<arr.length;i++)
+        {
+            for(let j=0;j<arr.length;j++)
+                {
+                    console.log(arr[j] , arr[j+1])
+                    if (arr[j]>arr[j+1])
+                        {
+                            let temp=arr[j]
+                            arr[j]=arr[j+1]
+                            arr[j+1]=temp
+                            console.log("swap")
+                        }
+                }
+                console.log(arr)
+        }
+
+        return arr
+}
+
+
+console.log(bubbleSort([2,3,1,6,0]))
+
+
+2 3
+3 1
+swap
+3 6
+6 0
+swap
+6 undefined
+[ 2, 1, 3, 0, 6 ]
+2 1
+swap
+2 3
+3 0
+swap
+3 6
+6 undefined
+[ 1, 2, 0, 3, 6 ]
+1 2
+2 0
+swap
+2 3
+3 6
+6 undefined
+[ 1, 0, 2, 3, 6 ]
+1 0
+swap
+1 2
+2 3
+3 6
+6 undefined
+[ 0, 1, 2, 3, 6 ]
+0 1
+1 2
+2 3
+3 6
+6 undefined
+[ 0, 1, 2, 3, 6 ]
+[ 0, 1, 2, 3, 6 ]
+
+
+
+
+OPTIMIZE IT 
+
+
+Complexities
+Worst Case and Average case time complexity 
+If the array is in reverse order then this condition is the worst case and Its time complexity is O(n2).
+
+Best case time complexity
+If the array is already sorted then it is the best-case scenario and its time complexity is O(n)
+
+Auxiliary Space: O(1)
+
