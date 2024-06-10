@@ -1,0 +1,2 @@
+in insertion sort we start from first position and save its value in a var and check it with adjacent value if it smaller 
+than keep the larger no at this position 
