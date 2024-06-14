@@ -1,0 +1,5 @@
+THE ARRAY SHOULD BE SORTED. in this we need 3 things start, middle and end 
+firstly start will be 0 index end will be last index and middle will s+e/2
+now if n>mid then s=mid+1 else e=mid-1
+
+to cover case if element should not be thr s never be grater than e
